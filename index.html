@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<title>Rino Catering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">RINO CATERING SERVICES</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="http://www.wallpaperspick.com/wp-content/uploads/2015/12/Idli-Dosa-And-Vada-South-Indian-Famous-Delicious-Food-HD-Wallpaper-06409.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-topmiddle w3-padding-large " style="letter-spacing:4px;">
+    <h1 class="w3-xxlarge"><br>RINO CATERING SERVICES</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://i.pinimg.com/736x/16/5a/be/165abe7a50b36b3a5224fe21b47815fc--idli-sambar-comida-indiana.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1981</h5>
+      <p class="w3-large">A man with a humble beginning. A dream to make it big. And a simple idea driven by a lot of passion. When you bring all three together, the possibilities are immense. 
+Way back in 1981, our founder 
+Mr. J.Rino believed that few things bring about a smile of satisfaction like<span class="w3-tag w3-light-grey">good</span> food.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Greetings from Rino Catering Service on the occasion of the marriage/auspicious function to be celebrated in your family. We offer the best services to celebrate according to your preference without compromising on the basic religious requirements. We have completed a decade of service in this event management and we have more than 6000 satisfied customers on our records.
+Quality and courtesy are our keywords.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Break Fast</h4>
+      <p class="w3-text-grey">Idly with vada,Dosa,Poori,Pongal vadai,Noodles,</p><br>
+    
+      <h4>Lunch</h4>
+      <p class="w3-text-grey">Meals with 7 koothu,Chicken briyani with chicken fry,Mutton biriyani</p><br>
+    
+      <h4>Snacks</h4>
+      <p class="w3-text-grey">Methu vadai,Masal vadai,cutlet,valaka baji,melaga baji,tea,coffee</p><br>
+    
+      <h4>Dinner</h4>
+      <p class="w3-text-grey">Chapati,parotta,Aaapam,idiyaapam</p><br>
+    
+      <h4>Welcome Drinks</h4>
+      <p class="w3-text-grey">orange,apple,grapes,watermelon,lemon</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://b.zmtcdn.com/data/menus/669/18249669/0fb2c6ec8e5a14a167c951eba9595fa8.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" width="500" height="750">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 6290001 Chennai, TN</b></p>
+    <p>You can also contact us by phone 9442421491 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="firstservlet" method="get" onsubmit="book()">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="nam" onkeyup="valid1()"></p><span id="p1" style="color:red"> </span>
+      <p><input class="w3-input w3-padding-16" onkeyup="valid3()" type="number" min="20" placeholder="How many people" required name="People" id="pep"></p><span id="p3" style="color:red"> </span>
+      <p><input class="w3-input w3-padding-16" type="date" placeholder="Date and time" required name="Date"  id="tim"></p>
+      <p><input class="w3-input w3-padding-16" type="text" onkeyup="valid2()" placeholder="Message \ Special requirements" id="msg" required name="Message"></p><span id="p2" style="color:red"> </span>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit" >SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+<div id="map" class="w3-container w3-padding-64" style="width:100%;height:500px"></div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Rino</a></p>
+</footer>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(8.1836380,77.4259880);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE_8S085yGiew-HQeS4nimp4R9L4Oo8eI&callback=myMap"></script>
+<script>
+flag1=0;
+flag2=0;
+flag3=0;
+$(document).ready(function(){
+  var x=document.getElementById("tim");
+  var da=new Date();
+  var mo=da.getMonth();
+  var z=da.getDate();
+  if(mo<10)
+  {
+    mo=mo+1;
+    mo="0"+mo;
+  }
+    if(z<10)
+  {
+    z="0"+z;
+  }
+  var ans=da.getFullYear()+"-"+mo+"-"+z;
+  x.setAttribute("value",ans);
+});
+function valid3()
+{
+  var x=document.getElementById("pep").value;
+  //var pattern=/^[^a-zA-Z]+$/;
+  if(x<=19)
+  {
+    document.getElementById("p3").innerHTML="Minimum value should be 20"; 
+    flag3=0;
+  }
+  else
+  {
+    document.getElementById("p3").innerHTML="";  
+    flag3=1;
+  }
+}
+function valid1()
+{
+  var n=document.getElementById("nam").value;
+  var a=/^[a-z A-Z]+$/;
+  if(a.test(n))
+  {
+     document.getElementById("p1").innerHTML="";
+     flag1=1;
+  }
+  else if(n=="")
+  {
+    document.getElementById("p1").innerHTML="Cannot be empty";
+    flag1=0;
+  }
+  else
+  {
+     document.getElementById("p1").innerHTML="Enter in proper format";
+     flag1=0;
+  }
+
+}
+function valid2()
+{
+     var n=document.getElementById("msg").value;
+  if(n=="")
+  {
+    flag2=0;
+    document.getElementById("p2").innerHTML="Cannot be empty";
+  }
+  else
+  {
+      flag2=1;
+     document.getElementById("p2").innerHTML="";
+  }  
+}
+function book()
+{
+  if(flag1==1 && flag2==1 && flag3==1)
+  {
+      alert("Booked");
+  }
+  else
+  {
+   alert("Enter all the fields properly"); 
+    event.preventDefault();
+  }
+}
+//smooth scrolling
+  // Select all links with hashes
+
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          //$target.focus();
+          // if ($target.is(":focus")) { // Checking if the target was focused
+          //   return false;
+          // } else {
+          //   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          //   $target.focus(); // Set focus again
+          // };
+        });
+      }
+    }
+  });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<web-app>
+<servlet>
+<servlet-name>example</servlet-name>
+
+<servlet-class>firstservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>example</servlet-name>
+<url-pattern>/firstservlet</url-pattern>
+</servlet-mapping>
+</web-app>
